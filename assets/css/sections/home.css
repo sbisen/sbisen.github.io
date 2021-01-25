@@ -48,7 +48,9 @@ z-index: -1;
 }
 
 .home .typing-carousel {
-  font-size: 16pt;
+  text-shadow: -0.5px 0 rgba(40, 40, 40), 0 0.5px rgba(40, 40, 40), 0.5px 0 rgba(40, 40, 40), 0 -0.5px rgba(40, 40, 40);
+  font-size: 20pt;
+  font:bold
   color: #f0f0f0;
 }
 
@@ -145,7 +147,8 @@ z-index: -1;
   }
 
   .home .greeting {
-    font-size: 24pt;
+    text-shadow: -0.5px 0 rgba(20, 20, 20), 0 0.5px rgba(20, 20, 20), 0.5px 0 rgba(20, 20, 20), 0 -0.5px rgba(20, 20, 20);
+    font-size: 46pt;
   }
 }
 
