@@ -44,14 +44,13 @@ z-index: -1;
 }
 
 .home .greeting {
-  color: #f9fafc;
+  color: #ffffff;
 }
 
 .home .typing-carousel {
   text-shadow: -0.5px 0 rgba(40, 40, 40), 0 0.5px rgba(40, 40, 40), 0.5px 0 rgba(40, 40, 40), 0 -0.5px rgba(40, 40, 40);
-  font-size: 20pt;
-  font:bold
-  color: #f0f0f0;
+  font-size: 15pt;
+  color: #000080;
 }
 
 #typing-carousel-data {
@@ -147,8 +146,8 @@ z-index: -1;
   }
 
   .home .greeting {
-    text-shadow: -0.5px 0 rgba(20, 20, 20), 0 0.5px rgba(20, 20, 20), 0.5px 0 rgba(20, 20, 20), 0 -0.5px rgba(20, 20, 20);
-    font-size: 30pt;
+    text-shadow: -0.5px 0 rgba(30, 30, 30), 0 0.5px rgba(30, 30, 30), 0.5px 0 rgba(30, 30, 30), 0 -0.5px rgba(30, 30, 30);
+    font-size: 24pt;
   }
 }
 
