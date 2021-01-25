@@ -50,7 +50,8 @@ z-index: -1;
 .home .typing-carousel {
   text-shadow: -0.5px 0 rgba(40, 40, 40), 0 0.5px rgba(40, 40, 40), 0.5px 0 rgba(40, 40, 40), 0 -0.5px rgba(40, 40, 40);
   font-size: 15pt;
-  color: #000080;
+  /* color: #000080; */
+  color:#ffffff;
 }
 
 #typing-carousel-data {
@@ -69,6 +70,13 @@ z-index: -1;
           animation: bounce 2s infinite;
 }
 
+.fab{
+  color:white;
+}
+
+.fa{
+  color:white;
+}
 
 @-webkit-keyframes bounce {
   0%,
