@@ -148,7 +148,7 @@ z-index: -1;
 
   .home .greeting {
     text-shadow: -0.5px 0 rgba(20, 20, 20), 0 0.5px rgba(20, 20, 20), 0.5px 0 rgba(20, 20, 20), 0 -0.5px rgba(20, 20, 20);
-    font-size: 46pt;
+    font-size: 30pt;
   }
 }
 
