@@ -49,9 +49,11 @@ z-index: -1;
 
 .home .typing-carousel {
   text-shadow: -0.5px 0 rgba(40, 40, 40), 0 0.5px rgba(40, 40, 40), 0.5px 0 rgba(40, 40, 40), 0 -0.5px rgba(40, 40, 40);
-  font-size: 15pt;
+  font-size: 19pt;
   /* color: #000080; */
-  color:#ffffff;
+  /* color:#ffffff; */
+  color:#7D7D7D;
+  
 }
 
 #typing-carousel-data {
@@ -155,7 +157,7 @@ z-index: -1;
 
   .home .greeting {
     text-shadow: -0.5px 0 rgba(30, 30, 30), 0 0.5px rgba(30, 30, 30), 0.5px 0 rgba(30, 30, 30), 0 -0.5px rgba(30, 30, 30);
-    font-size: 24pt;
+    font-size: 28pt;
   }
 }
 
