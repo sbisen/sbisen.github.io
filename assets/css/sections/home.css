@@ -73,11 +73,13 @@ z-index: -1;
 }
 
 .fab{
-  color:white;
+  color:#7D7D7D;
+  /* color:white; */
 }
 
 .fa{
-  color:white;
+  color:#7D7D7D;
+  /* color:white; */
 }
 
 @-webkit-keyframes bounce {
