@@ -51,8 +51,8 @@ z-index: -1;
   text-shadow: -0.5px 0 rgba(40, 40, 40), 0 0.5px rgba(40, 40, 40), 0.5px 0 rgba(40, 40, 40), 0 -0.5px rgba(40, 40, 40);
   font-size: 19pt;
   /* color: #000080; */
-  /* color:#ffffff; */
-  color:#7D7D7D;
+  color:#ffffff;
+  /* color:#7D7D7D; */
   
 }
 
@@ -73,13 +73,13 @@ z-index: -1;
 }
 
 .fab{
-  color:#7D7D7D;
-  /* color:white; */
+  /* color:#7D7D7D; */
+  color:white;
 }
 
 .fa{
-  color:#7D7D7D;
-  /* color:white; */
+  /* color:#7D7D7D; */
+  color:white;
 }
 
 @-webkit-keyframes bounce {
@@ -159,7 +159,7 @@ z-index: -1;
 
   .home .greeting {
     text-shadow: -0.5px 0 rgba(30, 30, 30), 0 0.5px rgba(30, 30, 30), 0.5px 0 rgba(30, 30, 30), 0 -0.5px rgba(30, 30, 30);
-    font-size: 28pt;
+    font-size: 30pt;
   }
 }
 
