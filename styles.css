@@ -1,0 +1,77 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.expertise-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.expertise-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #4CAF50;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.expertise-circle:hover {
+    transform: scale(1.1);
+}
+
+.central-figure {
+    width: 150px;
+    height: 150px;
+    z-index: 10;
+}
+
+/* Positioning circles around the central figure */
+.expertise-container .expertise-circle:nth-child(1) {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.expertise-container .expertise-circle:nth-child(2) {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.expertise-container .expertise-circle:nth-child(3) {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.expertise-container .expertise-circle:nth-child(4) {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.expertise-detail {
+    position: absolute;
+    top: 350px;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 8px;
+    display: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
