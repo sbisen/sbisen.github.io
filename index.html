@@ -44,10 +44,10 @@
         <div class="collapse navbar-collapse" id="top-nav-items">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#expertise">Expertise</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#expertise">Expertise</a>
+                    <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#experiences">Experiences</a>
@@ -88,29 +88,16 @@
                 </li>
             </ul>
         </div>
-        <a href="#about" class="scroll_down"><i class="arrow bounce fa fa-chevron-down"></i></a>
-    </div>
-</div>
-
-<div class="container-fluid section-holder bg-black" id="about">
-    <div class="container anchor p-lg-5 about-section">
-        <div class="row pt-sm-2 pt-md-4 align-self-center">
-            <div class="col-sm-12">
-                <h3 class="p-1">Shivika K Bisen</h3>
-                <h5 class="p-1">Generative AI - Data Science<br><a href="https://www.linkedin.com/in/shivika-k-bisen/">Viasat Inc</a></h5>
-                <p class="p-1 text-justify">
-                    <p> Expertise in LLM, NLP, Agentic AI products from inception to production at scale</p>
-                    <p><strong>Organizations</strong> Viasat, Paxafe - J&J, UMich - Google and Microsoft</p>
-                </p>    
-                <a href="files/Resume_Shivika.pdf" target="#"><button class="btn btn-dark">Resume</button></a>
-            </div>
+        <div class="resume-container mt-3">
+            <a href="files/Resume_Shivika.pdf" target="#"><button class="btn btn-primary btn-lg">Resume</button></a>
         </div>
+        <a href="#expertise" class="scroll_down"><i class="arrow bounce fa fa-chevron-down"></i></a>
     </div>
 </div>
 
 <div class="container-fluid section-holder bg-white" id="expertise">
     <div class="container anchor p-lg-5 expertise-section">
-        <h2 class="text-center">Expertise and Core Skills</h2>
+        <h2 class="text-center">Expertise and Core Competencies</h2>
         <div class="expertise-arch">
             <div class="expertise-professional">
                 <img src="images/avatar1.png" alt="Professional">
@@ -129,11 +116,21 @@
             </div>
             <div class="expertise-bubble" data-expertise="Natural language Processing">
                 <img src="images/nlp.jpeg" alt="Natural language Processing">
-                <span>Natural language Processing</span>
+                <span>Natural Language Processing</span>
             </div>
             <div class="expertise-bubble" data-expertise="Productionize @ Scale">
                 <img src="images/e2e.png" alt="Productionize AI @ Scale">
                 <span>Productionize AI @ Scale</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid section-holder bg-black" id="about">
+    <div class="container anchor p-lg-5 about-section">
+        <div class="row pt-sm-2 pt-md-4 align-self-center">
+            <div class="col-sm-12 text-center">
+                <!-- About section is now minimal -->
             </div>
         </div>
     </div>
@@ -204,7 +201,6 @@
         </div>
     </div>
 </div>
-
 
 <div class="container-fluid section-holder bg-dimmed" id="projects">
     <div class="container-fluid anchor pb-5 projects-section">
@@ -378,7 +374,7 @@
             </ul>
         </div>
     </div>
-</footer>
+</div>
 
 <script src="assets/js/jquery-3.4.1.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
@@ -390,7 +386,9 @@
 <script src="assets/js/jquery.filterizr.min.js"></script>
 <script src='assets/js/tabs.js'></script>
 <script src="assets/js/particles.js"></script>
-<script src="assets/js/particles.app.js"></script><script>
+<script src="assets/js/particles.app.js"></script>
+
+<script>
     document.querySelectorAll('.expertise-bubble').forEach(bubble => {
         bubble.addEventListener('mouseover', function() {
             this.classList.add('hover');
@@ -400,69 +398,100 @@
         });
     });
 </script>
+
 <style>
 .expertise-arch {
     width: 100%;
-    height: 600px; /* Adjusted height to accommodate the semi-circle */
+    height: 700px;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 40px 0;
 }
 
 .expertise-bubble {
-    width: 190px; /* Adjusted bubble size */
-    height: 100px;
-    background-color: #f3f3f3;
+    width: 280px;
+    height: 140px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-    border-radius: 5px;
-    padding: 10px; /* Adjusted padding */
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border-radius: 20px;
+    padding: 20px;
     text-align: center;
     position: absolute;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+.expertise-bubble::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.05) 100%);
+    border-radius: 20px;
+    z-index: 1;
 }
 
 .expertise-bubble img {
-    max-width: 70%; /* Adjusted image size */
-    max-height: 70%;
+    max-width: 60px;
+    max-height: 60px;
     object-fit: contain;
-    margin-bottom: 10px; /* Adjusted margin */
-    transition: max-width 0.3s, max-height 0.3s;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 2;
+    filter: brightness(1.2) contrast(1.1);
 }
 
 .expertise-bubble span {
-    font-size: 16px; /* Adjusted font size */
-    font-weight: 500;
-    transition: font-size 0.3s;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 2;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
 .expertise-bubble:hover {
-    transform: scale(2);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.3) rotate(2deg);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(135deg, #ff6b6b 0%, #feca57 100%);
+    z-index: 100;
 }
 
 .expertise-bubble:hover img {
-    max-width: 65%;
-    max-height: 55%;
+    max-width: 85px;
+    max-height: 85px;
+    transform: rotate(-2deg) scale(1.2);
 }
 
 .expertise-bubble:hover span {
-    font-size: 17px;
+    font-size: 22px;
+    font-weight: 700;
+    transform: translateY(-3px) scale(1.1);
 }
 
 .expertise-professional {
-    width: 100px; /* Adjusted central image size */
-    height: 100px;
+    width: 140px;
+    height: 140px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
+    border-radius: 50%;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+    overflow: hidden;
+    border: 5px solid #667eea;
 }
 
 .expertise-professional img {
@@ -472,41 +501,62 @@
     border-radius: 50%;
 }
 
-/* Positioning for bubbles in a semi-circular arrangement above the center */
-.expertise-bubble:nth-child(2) { /* Gen AI (Agentic) - Top-most */
-    top: 20%;
+/* Enhanced positioning for bigger bubbles */
+.expertise-bubble:nth-child(2) { /* Gen AI (Agentic) - Top */
+    top: 8%;
     left: 50%;
     transform: translateX(-50%);
 }
 
 .expertise-bubble:nth-child(3) { /* Prompt Engineer - Top-right */
-    top: 30%;
-    left: 70%;
+    top: 25%;
+    left: 75%;
     transform: translateX(-50%);
 }
 
-.expertise-bubble:nth-child(4) { /* Emotional Intelligence in AI - Bottom-right (of semi-circle) */
-    top: 50%;
+.expertise-bubble:nth-child(4) { /* Linguistics - Right */
+    top: 55%;
     left: 85%;
     transform: translateX(-50%);
 }
 
-.expertise-bubble:nth-child(5) { /* Linguistics - Bottom-left (of semi-circle) */
-    top: 50%;
+.expertise-bubble:nth-child(5) { /* Natural Language Processing - Left */
+    top: 55%;
     left: 15%;
     transform: translateX(-50%);
 }
 
-.expertise-bubble:nth-child(6) { /* Natural language Processing - Top-left */
-    top: 30%;
-    left: 30%;
-    transform: translateX(-60%);
+.expertise-bubble:nth-child(6) { /* Productionize @ Scale - Top-left */
+    top: 25%;
+    left: 25%;
+    transform: translateX(-50%);
 }
 
-.expertise-bubble:nth-child(7) { /* Productionize @ Scale - Center-top */
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .expertise-arch {
+        height: 500px;
+    }
+    
+    .expertise-bubble {
+        width: 200px;
+        height: 100px;
+        padding: 15px;
+    }
+    
+    .expertise-bubble img {
+        max-width: 40px;
+        max-height: 40px;
+    }
+    
+    .expertise-bubble span {
+        font-size: 14px;
+    }
+    
+    .expertise-professional {
+        width: 100px;
+        height: 100px;
+    }
 }
 </style>
 
